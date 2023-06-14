@@ -1,0 +1,31 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: calc(100vw - 135px);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 0 60px;
+
+    .heading{
+        font-size:xx-large;
+        font-weight: 800;
+    }
+
+    .sections{
+        display: flex;
+        gap: 20px;
+        .section{
+            font-size: x-large;
+            font-weight: 500;
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+              }
+        }
+    }
+}

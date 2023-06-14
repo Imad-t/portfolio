@@ -1,0 +1,23 @@
+.app{
+    height: 100vh;
+    background-color: white;
+    width: 100vw;
+    overflow: auto;
+    font-family: Poppins, sans-serif;
+    
+    &::-webkit-scrollbar {
+        width: 15px;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background-color:  gray ;
+        border-radius: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: white;
+      }
+
+      .container{
+        
+      }
+}
