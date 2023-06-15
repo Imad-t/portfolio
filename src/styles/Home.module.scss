@@ -3,6 +3,53 @@
     padding-top: 80px;
     width: calc(100vw - 15px);
     color: black;
-    background-color: green;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+
+    .myImage{
+        height: 360px;
+        width: 360px;
+        border-radius: 300px;
+        border: 5px solid black;
+        margin-bottom: 200px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 200px;
+        
+        p{
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            width: 700px;
+        }
+        .contact{
+            height: 80px;
+            width : 80px;
+        }
+        .stack{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: x-large;
+            span{
+                border-right: 3px solid black;
+                padding-right: 20px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+            }
+            .icon{
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
 
 }

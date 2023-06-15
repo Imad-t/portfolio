@@ -3,6 +3,27 @@
     padding-top: 80px;
     width: calc(100vw - 15px);
     color: black;
-    background-color: yellow;
+    background-color: white;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
 
+    img{
+        height: 420px;
+        width: 420px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+
+    }
+    .section{
+        margin-bottom: 100px;
+        width: 600px;
+        h3{
+            color: rgb(0, 72, 255);
+        }
+        p{
+            font-size: medium;
+        }
+    }
 }
