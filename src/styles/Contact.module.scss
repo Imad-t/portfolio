@@ -1,7 +1,44 @@
 .contact {
-  height: 100vh;
-  padding-top: 80px;
+  height: 100%;
   width: calc(100vw - 15px);
-  color: black;
-  background-color: red;
+  background-color: rgb(32, 32, 32) ;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+   .contactMe{
+    font-size: 32px;
+    text-align: center;
+    margin: 40px 0;
+  } 
+  .contactInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap :30px;
+    .icon{
+      height: 100px;
+      width: 100px;
+      color: white;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.1) rotate(-6deg);
+      }
+    }
+    .inline{
+      display: flex;
+      flex-direction: row;
+      gap : 40px;
+    }
+    .sm{
+      display: flex;
+      gap: 50px;
+      a{
+        color: white;
+        
+      }
+    }
+  }
+  
 }
