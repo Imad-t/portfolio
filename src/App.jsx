@@ -20,35 +20,32 @@ const App = () => {
   };
 
   useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === "ArrowDown" && currentIndex < components.length - 1) {
-        scrollToComponent(currentIndex + 1);
-      } else if (event.key === "ArrowUp" && currentIndex > 0) {
-        scrollToComponent(currentIndex - 1);
+    const handleScroll = (event) => {
+      const deltaY = event.deltaY;
+      const isKeyboardEvent = event.type === "keydown";
+      const containerScrollTop = containerRef.current.scrollTop;
+      const containerScrollHeight = containerRef.current.scrollHeight;
+      const containerClientHeight = containerRef.current.clientHeight;
+
+      if ((isKeyboardEvent && event.key === "ArrowDown") || (deltaY > 0 && containerScrollTop + containerClientHeight >= containerScrollHeight)) {
+        event.preventDefault();
+        if (currentIndex < components.length - 1) {
+          scrollToComponent(currentIndex + 1);
+        }
+      } else if ((isKeyboardEvent && event.key === "ArrowUp") || (deltaY < 0 && containerScrollTop === 0)) {
+        event.preventDefault();
+        if (currentIndex > 0) {
+          scrollToComponent(currentIndex - 1);
+        }
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
+    containerRef.current.addEventListener("wheel", handleScroll, { passive: false });
+    window.addEventListener("keydown", handleScroll);
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [currentIndex]);
-
-  useEffect(() => {
-    const handleMouseWheel = (event) => {
-      event.preventDefault();
-      if (event.deltaY > 0 && currentIndex < components.length - 1) {
-        scrollToComponent(currentIndex + 1);
-      } else if (event.deltaY < 0 && currentIndex > 0) {
-        scrollToComponent(currentIndex - 1);
-      }
-    };
-
-    window.addEventListener("wheel", handleMouseWheel, { passive: false });
-
-    return () => {
-      window.removeEventListener("wheel", handleMouseWheel);
+      containerRef.current.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("keydown", handleScroll);
     };
   }, [currentIndex]);
 
@@ -64,7 +61,7 @@ const App = () => {
               duration={500}
               onClick={() => scrollToComponent(index)}
             >
-              Scroll to Section
+              
             </Link>
             <div id={`component-${index}`}>
               <Component />
