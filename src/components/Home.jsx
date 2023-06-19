@@ -38,8 +38,8 @@ const Home = () => {
           <img className={styles.icon} src={js} alt="js " />
           <img className={styles.icon} src={react} alt="react " />
           <img className={styles.icon} src={chakra} alt="chakra " />
-          <img className={styles.icon} src={git} alt="git " />
           <img className={styles.icon} src={bootstrap} alt="bootstrap " />
+          <img className={styles.icon} src={git} alt="git " />
           <img className={styles.icon} src={python} alt="python " />
           <img className={styles.icon} src={sql} alt="sql " />
         </div>
