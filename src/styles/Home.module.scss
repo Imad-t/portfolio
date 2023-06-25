@@ -100,11 +100,11 @@
 @media screen and (max-width: 1080px) {
   .home{
     flex-direction:column-reverse;
+    padding: 0;
     
     .myImage{
 margin: 0;
-margin-top: 10rem;
-
+width: 45rem;
 
     }
   }
