@@ -10,19 +10,40 @@
   align-items: center;
 
   img {
-    height: 420px;
-    width: 420px;
+    
+    width: 30%;
     border-radius: 10px;
     margin-bottom: 100px;
   }
   .section {
     margin-bottom: 100px;
-    width: 600px;
-    h3 {
+    width: 60%;
+    h2 {
       color: rgb(0, 72, 255);
+      font-size: 3rem;
+    }
+    h3{
+      font-size: 2rem;
     }
     p {
-      font-size: medium;
+      
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and ( max-width: 1080px) {
+  
+  .about{
+    flex-direction: column;
+    img{
+      width: 80%;
+    }
+    .section{
+      width: 80%;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

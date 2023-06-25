@@ -6,8 +6,8 @@ const About = () => {
     <div className={styles.about}>
       <img src={image} alt="" />
       <div className={styles.section}>
-        <h3>About me</h3>
-        <h2>A dedicated Front-end Developer based in Algiers, Algeria.</h2>
+        <h2>About me</h2>
+        <h3>A dedicated Front-end Developer based in Algiers, Algeria.</h3>
         <p>
           As a junior frontend developer with experience in React, I have a
           solid foundation in building dynamic and responsive web applications.

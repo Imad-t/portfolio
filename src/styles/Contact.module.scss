@@ -16,7 +16,7 @@
   .contactInfo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap :30px;
+    gap :10px;
     .icon{
       height: 100px;
       width: 100px;
@@ -29,7 +29,7 @@
     .inline{
       display: flex;
       flex-direction: row;
-      gap : 40px;
+      gap : 20px;
     }
     .sm{
       display: flex;
@@ -41,4 +41,19 @@
     }
   }
   
+}
+
+@media screen and (max-width: 1080px) {
+  .contact{
+     width: 100vw;
+     .contactInfo{
+      .inline{
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      display: block;
+      margin: auto;
+     }
+  }
+ 
 }
