@@ -51,7 +51,7 @@ const App = () => {
 
   return (
     <div className={styles.app} tabIndex={0}>
-      <Navbar scrollToComponent={scrollToComponent} />
+      <Navbar scrollToComponent={scrollToComponent} className={styles.navbar}/>
       <div className={styles.container} ref={containerRef}>
         {components.map((Component, index) => (
           <div key={index}>
