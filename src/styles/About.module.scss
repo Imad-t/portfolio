@@ -20,14 +20,14 @@
     width: 60%;
     h2 {
       color: rgb(0, 72, 255);
-      font-size: 3rem;
+      font-size: 2rem;
     }
     h3{
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
     p {
       
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
 }
@@ -36,6 +36,7 @@
   
   .about{
     flex-direction: column;
+    padding: 0;
     img{
       width: 60%;
       margin: 0;
