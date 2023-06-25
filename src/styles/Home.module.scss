@@ -138,9 +138,42 @@
 @media screen and (max-width: 480px) {
   .home {
     .myImage {
-      margin: 60px 0 0 0;
-      height: 20rem;
-      width: 20rem;
+      margin: 20px 0 0 0;
+      height: 10rem;
+      width: 15rem;
+      @media screen and (max-height:800px){
+        margin: 90px 0 0 0;
+      }
+    }
+    .info{
+      margin: 0;
+      gap: 10px;
+      h1{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 1rem;
+        margin: 0;
+      }
+      .contact{
+        height: 40px;
+        width: 40px;
+      }
+      .stack{
+        span{
+          font-size: 1rem;
+        }
+        ul{
+          li{
+            height: 40px;
+            width: 40px;
+            .icon{
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }

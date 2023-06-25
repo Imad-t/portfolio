@@ -42,11 +42,10 @@
 @media screen and (max-width: 900px) {
     .navbar{
         flex-direction: column;
-        
 
         .heading{
             margin: 0;
-            padding: 6px 0;
+            padding: 6px 0 0 0;
             padding-left: 12px;
             font-size: larger;
             width: 100vw;

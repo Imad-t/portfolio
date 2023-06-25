@@ -38,9 +38,9 @@
   .about{
     flex-direction: column;
     gap: 0;
-    padding: 0 20px;
+    padding: 0;
     img{
-      width: 50%;
+      width: 70%;
       margin: 100px 0 0 0;
     }
     .section{
@@ -52,3 +52,43 @@
     }
   }
 }
+@media screen and ( max-width: 480px ) {
+  .about{
+    padding: 40px 0 0 0;
+   
+    .section{
+      h2{
+        font-size: 1.2rem;
+      }
+      h3{
+        font-size: 1rem;
+        text-align: center;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-height:800px){
+  .about{
+    padding: 60px 0 0 0;
+    img{
+      width: 50%;
+    }
+    section{
+      h2{
+        font-size: 1rem;
+        margin: 0;
+      }
+      h3{
+        font-size: 0.8rem;
+        text-align: center;
+      }
+      p{
+        font-size: 0.4rem;
+      }
+    }
+  }
+ }

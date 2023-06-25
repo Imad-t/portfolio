@@ -9,7 +9,7 @@
   align-items: center;
   
    .contactMe{
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     margin: 40px 0;
   } 
@@ -43,7 +43,7 @@
   
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 900px) {
   .contact{
      width: 100vw;
      .contactInfo{
@@ -56,4 +56,22 @@
      }
   }
  
+}
+
+@media screen and (max-width: 480px) {
+  .contact{
+    padding: 0;
+    .contactMe{
+      font-size: 1.2rem;
+      word-break: break-word;
+      text-align: left;
+      width: 95%;
+    }
+    .contactInfo{
+      .icon{
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
 }
