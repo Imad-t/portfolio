@@ -32,10 +32,14 @@
         }
     }
 }
+@media screen and (max-width: 1080px) {
+    .navbar{
+        width: 100vw;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .navbar{
-        width: 100vw;
         flex-direction: column;
         
 
