@@ -97,7 +97,7 @@
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
   .home{
     flex-direction:column-reverse;
     
@@ -109,7 +109,7 @@ margin-top: 10rem;
     }
   }
 }
-@media screen and (max-height: 480px) {
+@media screen and (max-width: 480px) {
   .home{
     .myImage{
       margin-top: 120px;
