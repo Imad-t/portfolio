@@ -16,19 +16,19 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.info}>
-        <div>
           <h1>Front-End React Developer</h1>
           <p>
             Hi, I'm Imad-Eddine Terraf, a passionate front-end React developer
             based in Algiers, Algeria.
           </p>
-          <a href="https://www.linkedin.com/in/imad-eddine-terraf-745a0b201/">
+          <div className={styles.proLinks}>
+            <a href="https://www.linkedin.com/in/imad-eddine-terraf-745a0b201/">
             <img className={styles.contact} src={linkedin} alt="Linkedin " />
           </a>
           <a href="https://github.com/Imad-t">
             <img className={styles.contact} src={github} alt="Github " />
           </a>
-        </div>
+          </div>
         <div className={styles.stack}>
           <span>Tech Stack</span>
           <ul>
