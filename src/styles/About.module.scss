@@ -8,6 +8,11 @@
   gap: 60px;
   justify-content: center;
   align-items: center;
+  
+  &.dark-mode{
+    background-color: #1B1E32;
+    color: white;
+  }
 
   img {
     

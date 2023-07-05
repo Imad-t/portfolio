@@ -1,9 +1,8 @@
-import React from "react";
 import styles from "../styles/Navbar.module.scss";
 
-const Navbar = ({ scrollToComponent }) => {
+const Navbar = ({ darkMode, scrollToComponent }) => {
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${darkMode ? styles["dark-mode"] : ""}`}>
       <p className={styles.heading}>Imad.dev</p>
 
       <div className={styles.sections}>

@@ -6,10 +6,15 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { Link } from "react-scroll";
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const components = [Home, About, Projects, Contact];
 
 const App = () => {
+
+  const [darkMode, setDarkMode] = useState(true);
+
   const containerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -50,8 +55,8 @@ const App = () => {
   }, [currentIndex]);
 
   return (
-    <div className={styles.app} tabIndex={0}>
-      <Navbar scrollToComponent={scrollToComponent} className={styles.navbar}/>
+    <div className={`${styles.app} ${darkMode ? styles["dark-mode"] : ""}`} tabIndex={0}>
+      <Navbar darkMode={darkMode} scrollToComponent={scrollToComponent} className={styles.navbar}/>
       <div className={styles.container} ref={containerRef}>
         {components.map((Component, index) => (
           <div key={index}>
@@ -64,11 +69,14 @@ const App = () => {
               
             </Link>
             <div id={`component-${index}`}>
-              <Component />
+              <Component darkMode={darkMode}/>
             </div>
           </div>
         ))}
       </div>
+      <span className={styles.theme} onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? <LightModeIcon className={styles.LightModeIcon} /> :  <DarkModeIcon className={styles.DarkModeIcon} />}
+      </span>
     </div>
   );
 };

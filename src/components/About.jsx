@@ -1,9 +1,9 @@
 import styles from "../styles/About.module.scss";
 import image from "../assets/images/about.png";
 
-const About = () => {
+const About = ({darkMode}) => {
   return (
-    <div className={styles.about}>
+    <div className={`${styles.about} ${darkMode ? styles["dark-mode"] : ""}`}>
       <img src={image} alt="" />
       <div className={styles.section}>
         <h2>About me</h2>

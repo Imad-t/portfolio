@@ -2,9 +2,10 @@ import styles from "../styles/Projects.module.scss";
 import chatPage from "../assets/images/chatPage.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
-const Home = () => {
+
+const Home = ({darkMode}) => {
   return (
-    <div className={styles.projects}>
+    <div className={`${styles.projects} ${darkMode ? styles["dark-mode"] : ""}`}>
       <div className={styles.project}>
                 <div className={styles.info}>
           <h2>Chat Page</h2>

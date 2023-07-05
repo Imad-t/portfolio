@@ -12,9 +12,9 @@ import chakra from "../assets/images/chakra.png";
 import git from "../assets/images/git.png";
 import sql from "../assets/images/sql.png";
 
-const Home = () => {
+const Home = ({darkMode}) => {
   return (
-    <div className={styles.home}>
+    <div className={`${styles.home} ${darkMode ? styles["dark-mode"] : ""}`}>
       <div className={styles.info}>
           <h1>Front-End React Developer</h1>
           <p>

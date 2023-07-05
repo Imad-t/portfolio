@@ -7,6 +7,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &.dark-mode{
+    background-color: #1B1E32;
+    color: white;
+    .myImage{
+      border: 3px solid white;
+
+    }
+    .info{
+      .stack{
+        span{
+          border-right: 3px solid white;
+        }
+        ul{
+          li{
+            background-color: #242c70;
+            
+          }
+        }
+      }
+    }
+}
 
   @keyframes morph {
     0% {

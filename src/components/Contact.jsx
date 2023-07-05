@@ -9,7 +9,7 @@ import { useState } from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
 
     const [copySuccess, setCopySuccess] = useState('');
 
@@ -24,7 +24,7 @@ const Contact = () => {
       };
 
   return (
-    <div className={styles.contact}>
+    <div className={`${styles.contact} ${darkMode ? styles["dark-mode"] : ""}`}>
       <p className={styles.contactMe}>
         If you are intrested in working with me or if you have any questions, do
         not hesitate to contact me !{" "}
