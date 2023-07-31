@@ -7,27 +7,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &.dark-mode{
-    background-color: #1B1E32;
+  &.dark-mode {
+    background-color: #1b1e32;
     color: white;
-    .myImage{
+    .myImage {
       border: 3px solid white;
-
     }
-    .info{
-      .stack{
-        span{
+    .info {
+      .stack {
+        span {
           border-right: 3px solid white;
+          @media screen and (max-width: 900px) {
+            border-right: 0;
+            border-bottom: 3px solid white;
+          }
         }
-        ul{
-          li{
+        ul {
+          li {
             background-color: #242c70;
-            
           }
         }
       }
     }
-}
+  }
 
   @keyframes morph {
     0% {
@@ -74,7 +76,6 @@
       align-items: center;
       max-width: 600px;
       margin: 0;
-
     }
     .contact {
       height: 80px;
@@ -128,28 +129,28 @@
       height: 30rem;
       width: 24rem;
     }
-    .info{
+    .info {
       align-items: center;
       justify-content: center;
-      h1{
+      h1 {
         font-size: 2rem;
         text-align: center;
         margin-top: 20px;
       }
-      p{
+      p {
         font-size: 1.5rem;
         margin: 0 90px;
       }
-      .stack{
+      .stack {
         flex-direction: column;
         align-items: center;
-        span{
+        span {
           border: none;
           border-bottom: 3px solid black;
           text-align: center;
           padding: 0;
         }
-        ul{
+        ul {
           padding: 0;
         }
       }
@@ -158,38 +159,40 @@
 }
 @media screen and (max-width: 480px) {
   .home {
-    justify-content:start;
+    justify-content: start;
     .myImage {
-      margin:  100px 0 0 0;
+      margin: 100px 0 0 0;
       height: 8rem;
       width: 16rem;
       @media screen and (max-height: 800px) {
         margin-top: 90px;
       }
     }
-    .info{
+    .info {
       margin: 0;
       gap: 10px;
-      h1{
+      h1 {
         font-size: 1.5rem;
       }
-      p{
+      p {
         font-size: 1rem;
         margin: 0;
       }
-      .contact{
+      .contact {
         height: 40px;
         width: 40px;
       }
-      .stack{
-        span{
+      .stack {
+        span {
           font-size: 1rem;
+          border-bottom: 3px solid black;
+          border-right: 0;
         }
-        ul{
-          li{
+        ul {
+          li {
             height: 40px;
             width: 40px;
-            .icon{
+            .icon {
               height: 20px;
               width: 20px;
             }

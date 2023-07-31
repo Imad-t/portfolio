@@ -26,7 +26,8 @@
   .project {
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 40px 80px;
+    gap: 30px;
     .info {
       display: flex;
       flex-direction: column;
@@ -69,6 +70,8 @@
       height: 480px;
       width: 960px;
       margin: 0 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+
       &:hover {
         border: 2px solid black;
       }

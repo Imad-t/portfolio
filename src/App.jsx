@@ -1,11 +1,11 @@
 import { useRef, useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import Navbar from "./components/Navbar";
 import styles from "./styles/App.module.scss";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { Link } from "react-scroll";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 

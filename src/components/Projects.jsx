@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.scss";
 import chatPage from "../assets/images/chatPage.png";
+import skyWay from "../assets/images/skyWay.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
@@ -33,54 +34,29 @@ const Home = ({darkMode}) => {
 
       <div className={styles.project}>
         <div className={styles.info}>
-          <h2>Chat Page</h2>
+          <h2>Flight reservation website</h2>
           <p>
-            This is a simple chat page, suitable for any sort of website that
-            supports account registration.{" "}
+            A simple attemt at creating the UI of a flight reservation website.
           </p>
 
           <div className={styles.tech}>
-            <span>React</span> <span>Scss</span>
+            <span>React</span> <span>Typescript</span> <span>Tailwind CSS</span>
           </div>
 
           <div className={styles.links}>
-            <a href="https://github.com/Imad-t/chatPage">
+            <a href="https://github.com/Imad-t/skyWay">
               <GitHubIcon /> Code
             </a>
-            <a href="https://chat-page-zeta.vercel.app/">
+            <a href="https://sky-way.vercel.app/">
               <LaunchIcon /> Live demo
             </a>
           </div>
         </div>
 
-        <img src={chatPage} alt="chatPage" />
+        <img src={skyWay} alt="skyWay" />
       </div>
 
-      <div className={styles.project}>
-        
-
-        <div className={styles.info}>
-          <h2>Chat Page</h2>
-          <p>
-            This is a simple chat page, suitable for any sort of website that
-            supports account registration.{" "}
-          </p>
-
-          <div className={styles.tech}>
-            <span>React</span> <span>Scss</span>
-          </div>
-
-          <div className={styles.links}>
-            <a href="https://github.com/Imad-t/chatPage">
-              <GitHubIcon /> Code
-            </a>
-            <a href="https://chat-page-zeta.vercel.app/">
-              <LaunchIcon /> Live demo
-            </a>
-          </div>
-        </div>
-        <img src={chatPage} alt="chatPage" />
-      </div>
+      
     </div>
   );
 };
