@@ -93,6 +93,7 @@
     .project {
       flex-direction: column;
       gap: 20px;
+      padding: 20px 40px;
       .info {
         h2 {
           margin: 0;
@@ -117,6 +118,7 @@
   .projects {
     padding: 60px 0;
     .project {
+      padding: 20px 40px;
       img {
         width: 110%;
         height: auto;
