@@ -1,6 +1,7 @@
 import styles from "../styles/Projects.module.scss";
 import chatPage from "../assets/images/chatPage.png";
 import skyWay from "../assets/images/skyWay.png";
+import alarado from "../assets/images/alarado.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
@@ -9,26 +10,25 @@ const Home = ({darkMode}) => {
     <div className={`${styles.projects} ${darkMode ? styles["dark-mode"] : ""}`}>
       <div className={styles.project}>
                 <div className={styles.info}>
-          <h2>Chat Page</h2>
+          <h2>Responsive Hero Page</h2>
           <p>
-            This is a simple chat page, suitable for any sort of website that
-            supports account registration.{" "}
+            A responsive Hero page with Dark mode toggle
           </p>
 
           <div className={styles.tech}>
-            <span>React</span> <span>Scss</span>
+            <span>Javascript</span> <span>Css</span>
           </div>
 
           <div className={styles.links}>
-            <a href="https://github.com/Imad-t/chatPage">
+            <a href="https://github.com/Imad-t/Darkmode-Homepage">
               <GitHubIcon /> Code
             </a>
-            <a href="https://chat-page-zeta.vercel.app/">
+            <a href="https://alarado-ivory.vercel.app/">
               <LaunchIcon /> Live demo
             </a>
           </div>
         </div>
-        <img src={chatPage} alt="chatPage" />
+        <img src={alarado} alt="chatPage" />
 
       </div>
 
@@ -56,6 +56,30 @@ const Home = ({darkMode}) => {
         <img src={skyWay} alt="skyWay" />
       </div>
 
+      <div className={styles.project}>
+                <div className={styles.info}>
+          <h2>Chat Page</h2>
+          <p>
+            This is a simple chat page, suitable for any sort of website that
+            supports account registration.{" "}
+          </p>
+
+          <div className={styles.tech}>
+            <span>React</span> <span>Scss</span>
+          </div>
+
+          <div className={styles.links}>
+            <a href="https://github.com/Imad-t/chatPage">
+              <GitHubIcon /> Code
+            </a>
+            <a href="https://chat-page-zeta.vercel.app/">
+              <LaunchIcon /> Live demo
+            </a>
+          </div>
+        </div>
+        <img src={chatPage} alt="chatPage" />
+
+      </div>
       
     </div>
   );

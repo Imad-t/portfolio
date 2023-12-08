@@ -13,7 +13,7 @@ const components = [Home, About, Projects, Contact];
 
 const App = () => {
 
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const containerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
