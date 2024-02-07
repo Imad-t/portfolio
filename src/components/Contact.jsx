@@ -59,6 +59,7 @@ const Contact = ({darkMode}) => {
           </a>
         </div>
       </div>
+      <p className={styles.rights}>Developped by ImadDev © | All rights reserved</p>
     </div>
     
   );

@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     z-index: 200;
-    height: 100px;
+    height: 80px;
     width: calc(100vw - 15px);
     background-color: white;
     display: flex;
@@ -28,7 +28,7 @@
         gap: 30px;
     
         .section{
-            font-size: x-large;
+            font-size: large;
             font-weight: 600;
             &:hover {
                 cursor: pointer;
@@ -44,8 +44,8 @@
       
         .LightModeIcon {
           background-color: rgb(214, 255, 255);
-          height: 4rem;
-          width: 4rem;
+          height: 2.5rem;
+          width: 2.5rem;
           border-radius: 50%;
           color: gold;
           padding: 5px;
@@ -60,8 +60,8 @@
       
         .DarkModeIcon {
           background-color: darkblue;
-          height: 4rem;
-          width: 4rem;
+          height: 2.5rem;
+          width: 2.5rem;
           border-radius: 50%;
           color: yellow;
           padding: 5px;

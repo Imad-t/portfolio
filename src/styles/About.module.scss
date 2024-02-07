@@ -15,16 +15,15 @@
   }
 
   img {
-    
-    width: 30%;
+    max-width: 400px;
     border-radius: 10px;
-    margin-bottom: 100px;
+    margin: 0 0 100px 10px;
   }
   .section {
     margin-bottom: 100px;
     width: 60%;
     h2 {
-      color: rgb(0, 72, 255);
+      color: #00008B;
       font-size: 2rem;
     }
     h3{
@@ -32,24 +31,39 @@
       margin: 0;
     }
     p {
-      margin: 10px 0 0 0;
+      margin: 10px 10px 0 0;
       font-size: 1.2rem;
     }
   }
 }
 
+@media screen and ( max-width: 1024px) {
+ .about{
+  .section{
+    margin-right: 20px;
+    h2{
+      font-size: 1.6rem;
+    }
+    h3{
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+ }
+}
 @media screen and ( max-width: 900px) {
   
   .about{
-    flex-direction: column;
-    gap: 0;
+    gap: 20px;
     padding: 0;
     img{
-      width: 70%;
-      margin: 100px 0 0 0;
+      height: 60%;
+      max-width: 240px;
+      margin: 0 0 0 10px;
     }
     .section{
-      width: 80%;
       display:flex;
       flex-direction: column;
       align-items: center;
@@ -57,11 +71,16 @@
     }
   }
 }
-@media screen and ( max-width: 480px ) {
+@media screen and ( max-width: 640px ) {
   .about{
+    width: 100%;
     padding: 0;
-   
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
     .section{
+      width: 90%;
       h2{
         font-size: 1.2rem;
       }
@@ -72,6 +91,11 @@
       p{
         font-size: 0.8rem;
       }
+    }
+    img{
+      height: 180px;
+      width: 300px;
+      min-width: 200px;
     }
   }
 }

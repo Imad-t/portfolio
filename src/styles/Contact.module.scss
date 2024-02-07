@@ -13,7 +13,7 @@
   }
   
    .contactMe{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 40px 0;
   } 
@@ -22,8 +22,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap :10px;
     .icon{
-      height: 100px;
-      width: 100px;
+      height:60px;
+      width:60px;
       color: white;
       cursor: pointer;
       &:hover{
@@ -43,6 +43,9 @@
         
       }
     }
+  }
+  .rights{
+    color: #808080;
   }
   
 }
