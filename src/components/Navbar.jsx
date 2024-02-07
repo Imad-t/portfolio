@@ -1,6 +1,8 @@
 import styles from "../styles/Navbar.module.scss";
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
-const Navbar = ({ darkMode, scrollToComponent }) => {
+const Navbar = ({ darkMode, setDarkMode, scrollToComponent }) => {
   return (
     <div className={`${styles.navbar} ${darkMode ? styles["dark-mode"] : ""}`}>
       <p className={styles.heading}>Imad.dev</p>
@@ -19,6 +21,10 @@ const Navbar = ({ darkMode, scrollToComponent }) => {
           Contact
         </div>
       </div>
+
+      <span className={styles.theme} onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? <LightModeIcon className={styles.LightModeIcon} /> :  <DarkModeIcon className={styles.DarkModeIcon} />}
+      </span>
     </div>
   );
 };

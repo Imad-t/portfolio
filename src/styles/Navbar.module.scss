@@ -19,7 +19,7 @@
     .heading{
         font-size: xx-large;
         font-weight: 800;
-        margin-left: 60px;
+        margin-left: 80px;
     }
 
     .sections{
@@ -36,6 +36,44 @@
               }
         }
     }
+    .theme {
+        // position: fixed;
+        // bottom: 1rem;
+        // right: 2rem;
+        margin-right: 80px;
+      
+        .LightModeIcon {
+          background-color: rgb(214, 255, 255);
+          height: 4rem;
+          width: 4rem;
+          border-radius: 50%;
+          color: gold;
+          padding: 5px;
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.09);
+      
+          &:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+          }
+        }
+      
+        .DarkModeIcon {
+          background-color: darkblue;
+          height: 4rem;
+          width: 4rem;
+          border-radius: 50%;
+          color: yellow;
+          padding: 5px;
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.09);
+      
+          &:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+          }
+        }
+      }
 }
 @media screen and (max-width: 1080px) {
     .navbar{
@@ -60,6 +98,12 @@
             justify-content: space-between;
             padding-bottom: 20px;
             
+        }
+        .theme{
+            position: fixed;
+            bottom: 20px;
+            right: 0px;
+            margin: 10px;
         }
     }
 }

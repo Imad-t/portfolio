@@ -6,8 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import LightModeIcon from '@mui/icons-material/LightMode';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
+
 
 const components = [Home, About, Projects, Contact];
 
@@ -45,18 +44,18 @@ const App = () => {
       }
     };
 
-    containerRef.current.addEventListener("wheel", handleScroll, { passive: false });
+    //containerRef.current.addEventListener("wheel", handleScroll, { passive: false });
     window.addEventListener("keydown", handleScroll);
 
     return () => {
-      containerRef.current.removeEventListener("wheel", handleScroll);
+      //containerRef.current.removeEventListener("wheel", handleScroll);
       window.removeEventListener("keydown", handleScroll);
     };
   }, [currentIndex]);
 
   return (
     <div className={`${styles.app} ${darkMode ? styles["dark-mode"] : ""}`} tabIndex={0}>
-      <Navbar darkMode={darkMode} scrollToComponent={scrollToComponent} className={styles.navbar}/>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} scrollToComponent={scrollToComponent} className={styles.navbar}/>
       <div className={styles.container} ref={containerRef}>
         {components.map((Component, index) => (
           <div key={index}>
@@ -74,9 +73,7 @@ const App = () => {
           </div>
         ))}
       </div>
-      <span className={styles.theme} onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? <LightModeIcon className={styles.LightModeIcon} /> :  <DarkModeIcon className={styles.DarkModeIcon} />}
-      </span>
+      
     </div>
   );
 };

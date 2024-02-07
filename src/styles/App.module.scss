@@ -1,8 +1,9 @@
+
 .app {
   height: 100vh;
-  background-color: white;
   width: 100vw;
-  overflow: auto;
+  overflow-x: hidden;
+  background-color: white;
   font-family: Poppins, sans-serif;
   
   &::-webkit-scrollbar {
@@ -34,13 +35,13 @@
 
 .theme {
   position: fixed;
-  bottom: 3rem;
-  right: 4rem;
+  bottom: 1rem;
+  right: 2rem;
 
   .LightModeIcon {
     background-color: rgb(214, 255, 255);
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     color: gold;
     padding: 5px;
@@ -55,8 +56,8 @@
 
   .DarkModeIcon {
     background-color: darkblue;
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     color: yellow;
     padding: 5px;
