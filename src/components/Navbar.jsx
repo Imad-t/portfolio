@@ -1,11 +1,12 @@
 import styles from "../styles/Navbar.module.scss";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import logo from "../assets/images/logo.png";
 
 const Navbar = ({ darkMode, setDarkMode, scrollToComponent }) => {
   return (
     <div className={`${styles.navbar} ${darkMode ? styles["dark-mode"] : ""}`}>
-      <p className={styles.heading}>Imad.dev</p>
+      <img src={logo} className={styles.logo}></img>
 
       <div className={styles.sections}>
         <div className={styles.section} onClick={() => scrollToComponent(0)}>

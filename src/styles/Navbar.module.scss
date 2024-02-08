@@ -16,31 +16,28 @@
         background-color: #141628;
         color: white;
     }
-    .heading{
+    .logo{
         font-size: xx-large;
-        font-weight: 800;
-        margin-left: 80px;
+        margin-left: 4%;
     }
 
     .sections{
-        margin-right: 60px;
+        margin-right: 6%;
         display: flex;
         gap: 30px;
     
         .section{
-            font-size: large;
+            font-size: x-large;
             font-weight: 600;
             &:hover {
                 cursor: pointer;
-                transform: scale(1.2);
+                transform: scale(1.1);
+                transition: ease-in-out 0.1s;
               }
         }
     }
     .theme {
-        // position: fixed;
-        // bottom: 1rem;
-        // right: 2rem;
-        margin-right: 80px;
+        margin-right: 4%;
       
         .LightModeIcon {
           background-color: rgb(214, 255, 255);
@@ -83,40 +80,57 @@
 
 @media screen and (max-width: 900px) {
     .navbar{
-        flex-direction: column;
 
-        .heading{
-            margin: 0;
-            padding: 6px 0 0 0;
-            padding-left: 12px;
-            font-size: larger;
-            width: 100vw;
+        .logo{
+            font-size: small;
         }
         .sections{
             width: 90%;
             margin-right: 0;
-            justify-content: space-between;
-            padding-bottom: 20px;
-            
+            justify-content: center;
         }
         .theme{
             position: fixed;
             bottom: 20px;
-            right: 0px;
+            right: 6px;
             margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navbar{
+        height: 80px;
+        .sections{
+            gap: 5%;
+            justify-content: center;
+            .section{
+                font-size: large;
+            }
         }
     }
 }
 
 @media screen and (max-width: 480px) {
     .navbar{
+        justify-content: center;
         height: 80px;
+        .logo{
+            display: none;
+            margin: 0;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar{
         .sections{
-            gap: 10%;
-            justify-content: center;
+            gap: 3%;
             .section{
-                font-size: 100%;
+                font-size: medium;
             }
         }
+        
     }
 }

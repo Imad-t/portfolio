@@ -40,8 +40,7 @@ const Contact = ({darkMode}) => {
         <div className={styles.inline}>
           <EmailIcon className={styles.icon} onClick={() => handleCopy('imadeddineterraf@gmail.com')}/>
           <div>
-            <p>Email</p>
-            <p>imadeddineterraf@gmail.com</p>
+            <p>Copy Email</p>
           </div>
         </div>
         <div className={styles.sm}>

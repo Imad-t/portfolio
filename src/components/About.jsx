@@ -4,7 +4,6 @@ import image from "../assets/images/about.png";
 const About = ({darkMode}) => {
   return (
     <div className={`${styles.about} ${darkMode ? styles["dark-mode"] : ""}`}>
-      <img src={image} alt="" />
       <div className={styles.section}>
         <h2>About me</h2>
         <h3>A dedicated Front-end Developer based in Algiers, Algeria.</h3>

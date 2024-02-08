@@ -2,11 +2,12 @@
   min-height: 100vh;
   width: calc(100vw - 15px);
   color: black;
-  padding: 50px 0;
+  padding: 100px 0;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 
   &.dark-mode{
     background-color: #1B1E32;
@@ -24,13 +25,18 @@
   }
 
   .project {
-    width: 100%;
+    width: 70%;
     display: flex;
     align-items: center;
-    justify-content:end;
-    padding: 40px 80px;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+
 
     .info {
+      width: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -39,10 +45,12 @@
         color: #00008B;
         font-size: 2rem;
         font-weight: 600;
+        margin: 0;
+        text-align: center;
       }
       p {
         padding: 0 40px;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 600;
         max-width: 600px;
         text-align: center;
@@ -50,7 +58,7 @@
       .tech {
         text-align: center;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.2rem;
         white-space: nowrap;
 
         span {
@@ -65,11 +73,15 @@
       }
       .links {
         display: flex;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
         font-weight: 600;
-        font-size: larger;
+        font-size: x-large;
         padding-top: 30px;
         a {
+          display: flex;
+          align-items: center;
+          gap: 4px;
           white-space: nowrap;
           margin: 0 10px;
           color: black;
@@ -84,28 +96,62 @@
     }
     img {
       border-radius: 10px;
-      height: 360px;
-      width: 720px;
+      width: 50%;
       margin: 0 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-
-      &:hover {
-        border: 2px solid black;
-      }
     }
   }
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1600px) {
+  .projects{
+    .project{
+      width: 80%;
+      .info{
+        width: 50%;
+        h2{
+          font-size: 2rem;
+        }
+      }
+      img{
+        width: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px){
+  .projects{
+    .project{
+      width: 80%;
+      .info{
+        width: 50%;
+        h2{
+          font-size: 2rem;
+        }
+        p{
+          font-size: 1.2rem;
+        
+        }
+      }
+      img{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
   .projects {
     .project {
+      width: 70%;
       flex-direction: column;
       gap: 20px;
       padding: 20px 40px;
       .info {
+        width: 90%;
         h2 {
-          margin: 0;
+          font-size: 1.8rem;
         }
         p {
           padding: 15px 0;
@@ -123,13 +169,21 @@
     }
   }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 900px){
+.projects{
+  width: 100vw;
+  }  
+}
+
+@media screen and (max-width: 640px) {
   .projects {
     padding: 60px 0;
     .project {
-      padding: 20px 40px;
+      width: 75%;
+      padding: 20px 20px;
       img {
-        width: 90%;
+        width: 95%;
         height: auto;
       }
       .info {
@@ -143,11 +197,29 @@
           margin: 0;
         }
         .tech{
-          font-size: 1.2rem;
+          font-size: 0.7rem;
         }
         .links {
           font-size: 1rem;
           padding: 10px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .projects{
+    .project{
+      .info{
+        .tech{
+          font-size: 0.5rem;
+        }
+        .links{
+
+          a{
+            font-size: 0.8rem;
+          }
         }
       }
     }

@@ -20,7 +20,8 @@
   .contactInfo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap :10px;
+    gap: 40px;
+    justify-content: space-evenly ;
     .icon{
       height:60px;
       width:60px;
@@ -33,10 +34,12 @@
     .inline{
       display: flex;
       flex-direction: row;
+      align-items: center;
       gap : 20px;
     }
     .sm{
       display: flex;
+      align-items: center;
       gap: 50px;
       a{
         color: white;
@@ -49,32 +52,64 @@
   }
   
 }
-
+@media screen and (max-width: 1280px) {
+  .contact{
+    .contactMe{
+      font-size: 1rem;
+    }
+    .contactInfo{
+      .inline{
+        justify-content: center;
+      }
+      .sm{
+        margin-left: 20px;
+        gap: 20px;
+      }
+      .icon{
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+  
+}
 @media screen and (max-width: 900px) {
   .contact{
      width: 100vw;
+     .contactMe{
+      margin: 0 10px;
+      text-align: center;
+    }
      .contactInfo{
+      margin: 0 20px;
       .inline{
         justify-content: center;
         margin-bottom: 20px;
+        gap: 5px;
+        p{
+          font-size: 0.8rem;
+        }
       }
-      display: block;
-      margin: auto;
+      .sm{
+        margin: auto;  
+      }
      }
   }
  
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .contact{
-    padding: 0;
     .contactMe{
-      font-size: 1.2rem;
-      word-break: break-word;
-      text-align: left;
       width: 95%;
+      font-size: 0.8rem;
     }
     .contactInfo{
+      display: flex;
+      flex-direction: column;
+      .inline{
+        margin: 0 0 5px 0;
+      }
       .icon{
         height: 40px;
         width: 40px;
