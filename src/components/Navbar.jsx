@@ -2,11 +2,15 @@ import styles from "../styles/Navbar.module.scss";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import logo from "../assets/images/logo.png";
+import logoDark from "../assets/images/logodark.png";
+
 
 const Navbar = ({ darkMode, setDarkMode, scrollToComponent }) => {
   return (
     <div className={`${styles.navbar} ${darkMode ? styles["dark-mode"] : ""}`}>
-      <img src={logo} className={styles.logo}></img>
+      {
+        darkMode ? <img src={logoDark} className={styles.logo}></img> : <img src={logo} className={styles.logo}></img>
+      }
 
       <div className={styles.sections}>
         <div className={styles.section} onClick={() => scrollToComponent(0)}>

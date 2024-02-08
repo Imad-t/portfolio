@@ -13,7 +13,14 @@
     background-color: #1B1E32;
     color: white;
     .project{
+      background-color: #141628;
       .info{
+        .tech{
+          span{
+            box-shadow: 0 6px 6px rgba(255, 255, 255, 0.1);
+            border: 1px solid rgb(204, 204, 204);
+          }
+        }
       .links{
         a{
           color: white;
