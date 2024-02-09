@@ -14,7 +14,7 @@ const Contact = ({darkMode}) => {
     const handleCopy = (text) => {
         navigator.clipboard.writeText(text)
           .then(() => {
-            toast.success(`Copied: ${text}`);
+            toast.success(`Copied email to clipboard`,{autoClose: 2000, closeButton: false,  onClick: () => toast.dismiss()});
           })
           .catch((error) => {
             console.error('Failed to copy text:', error);

@@ -11,10 +11,13 @@
 
   &.dark-mode{
     background-color: #1B1E32;
-    color: white;
+    color: #F5F5F5;
     .project{
       background-color: #141628;
       .info{
+        h2{
+          color: #458FAB;
+        }
         .tech{
           span{
             box-shadow: 0 6px 6px rgba(255, 255, 255, 0.1);
@@ -23,7 +26,7 @@
         }
       .links{
         a{
-          color: white;
+          color: #F5F5F5;
         }
       }
     }
@@ -97,6 +100,9 @@
             color: blue;
             transform: scale(1.1);
             transition: ease-in-out 0.2s;
+          }
+          span{
+            text-decoration: underline;
           }
         }
       }
@@ -208,7 +214,7 @@
         }
         .links {
           font-size: 1rem;
-          padding: 10px 0 0 0;
+          margin: 16px 0 0 0;
         }
       }
     }

@@ -9,12 +9,17 @@
   align-items: center;
   background-image: url('../assets/images/about.png');
   background-size: 30%;
-  background-position: center;
+  background-position: 50% 55%;
   background-repeat: no-repeat;
 
   &.dark-mode{
     background-color: #1B1E32;
-    color: white;
+    color: #F5F5F5;
+    .section{
+      h2{
+        color: #458FAB;
+      }
+    }
   }
   
   .section {

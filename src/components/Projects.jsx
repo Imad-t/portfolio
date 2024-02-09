@@ -23,10 +23,10 @@ const Home = ({darkMode}) => {
 
           <div className={styles.links}>
             <a href="https://github.com/Imad-t/Darkmode-Homepage">
-              <GitHubIcon /> Code
+              <GitHubIcon /> <span>Code</span>
             </a>
             <a href="https://alarado-ivory.vercel.app/">
-              <LaunchIcon /> Live demo
+              <LaunchIcon /> <span>Live Demo</span>
             </a>
           </div>
         </div>
@@ -47,10 +47,10 @@ const Home = ({darkMode}) => {
 
           <div className={styles.links}>
             <a href="https://github.com/Imad-t/multi-step-formr">
-              <GitHubIcon /> Code
+              <GitHubIcon /> <span>Code</span>
             </a>
             <a href="https://multi-step-form-wine-alpha.vercel.app/">
-              <LaunchIcon /> Live demo
+              <LaunchIcon /> <span>Live Demo</span>
             </a>
           </div>
         </div>
@@ -70,10 +70,10 @@ const Home = ({darkMode}) => {
 
           <div className={styles.links}>
             <a href="https://github.com/Imad-t/music-player">
-              <GitHubIcon /> Code
+              <GitHubIcon /> <span>Code</span>
             </a>
             <a href="https://music-player-imadt.vercel.app/">
-              <LaunchIcon /> Live demo
+              <LaunchIcon /> <span>Live Demo</span>
             </a>
           </div>
         </div>
@@ -94,10 +94,10 @@ const Home = ({darkMode}) => {
 
           <div className={styles.links}>
             <a href="https://github.com/Imad-t/skyWay">
-              <GitHubIcon /> Code
+              <GitHubIcon /> <span>Code</span>
             </a>
             <a href="https://sky-way.vercel.app/">
-              <LaunchIcon /> Live demo
+              <LaunchIcon /> <span>Live Demo</span>
             </a>
           </div>
         </div>
@@ -119,10 +119,10 @@ const Home = ({darkMode}) => {
 
           <div className={styles.links}>
             <a href="https://github.com/Imad-t/chatPage">
-              <GitHubIcon /> Code
+              <GitHubIcon /> <span>Code</span>
             </a>
             <a href="https://chat-page-zeta.vercel.app/">
-              <LaunchIcon /> Live demo
+              <LaunchIcon /> <span>Live Demo</span>
             </a>
           </div>
         </div>

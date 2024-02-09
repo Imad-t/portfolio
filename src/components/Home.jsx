@@ -10,7 +10,7 @@ import bootstrap from "../assets/images/bootstrap.png";
 import python from "../assets/images/python.png";
 import chakra from "../assets/images/chakra.png";
 import git from "../assets/images/git.png";
-import sql from "../assets/images/sql.png";
+import tailwind from "../assets/images/tailwind.png";
 
 const Home = ({darkMode}) => {
   return (
@@ -39,13 +39,16 @@ const Home = ({darkMode}) => {
               <img className={styles.icon} src={css} alt="css " />
             </li>
             <li>
-              <img className={styles.icon} src={sass} alt="sass " />
+              <img className={styles.icon} src={tailwind} alt="tailwindcss " />
             </li>
             <li>
               <img className={styles.icon} src={js} alt="js " />
             </li>
             <li>
               <img className={styles.icon} src={react} alt="react " />
+            </li>
+            <li>
+              <img className={styles.icon} src={sass} alt="sass " />
             </li>
             <li>
               <img className={styles.icon} src={chakra} alt="chakra " />
@@ -58,9 +61,6 @@ const Home = ({darkMode}) => {
             </li>
             <li>
               <img className={styles.icon} src={python} alt="python " />
-            </li>
-            <li>
-              <img className={styles.icon} src={sql} alt="sql " />
             </li>
           </ul>
         </div>
