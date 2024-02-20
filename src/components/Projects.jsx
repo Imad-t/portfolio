@@ -4,12 +4,36 @@ import musicPlayer from "../assets/images/musicPlayer.png";
 import multiStep from "../assets/images/multiStep1.png";
 import skyWay from "../assets/images/skyWay.png";
 import alarado from "../assets/images/alarado.png";
+import translator from "../assets/images/translator.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
 const Home = ({darkMode}) => {
   return (
     <div className={`${styles.projects} ${darkMode ? styles["dark-mode"] : ""}`}>
+      <div className={styles.project}>
+                <div className={styles.info}>
+          <h2>Translator App</h2>
+          <p>
+            A single page translator app that utilizes MyMemory API and provides basic text to speech.
+          </p>
+
+          <div className={styles.tech}>
+            <span>React</span> <span>TailwindCss</span>
+          </div>
+
+          <div className={styles.links}>
+            <a href="https://github.com/Imad-t/translator-app">
+              <GitHubIcon /> <span>Code</span>
+            </a>
+            <a href="https://translated-io.vercel.app/">
+              <LaunchIcon /> <span>Live Demo</span>
+            </a>
+          </div>
+        </div>
+        <img src={translator} alt="translator website image" />
+
+      </div>
       <div className={styles.project}>
                 <div className={styles.info}>
           <h2>Responsive Hero Page</h2>
