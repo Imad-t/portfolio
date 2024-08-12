@@ -5,18 +5,19 @@ import skyWay from "./assets/images/skyWay.png";
 import alarado from "./assets/images/alarado.png";
 import translator from "./assets/images/translator.png";
 import quiz from "./assets/images/quiz.png";
+import t3 from "./assets/images/t3.png";
 
 const projects = [
   {
     title: "Online Gallery",
     description:
       "A Gallery website that allows users to sign up and upload their own images using the T3 stack.",
-    tech: ["NextJS", "PostgreSQL", "Prisma","Clerk", "TailwindCss"],
+    tech: ["NextJS", "PostgreSQL", "Prisma","Clerk"],
     links: {
-      code: "https://github.com/Imad-t/translator-app",
-      demo: "https://translated-io.vercel.app/",
+      code: "https://github.com/Imad-t/T3",
+      demo: "https://t3-gallery-imadt.vercel.app/",
     },
-    img: translator,
+    img: t3,
   },
   {
     title: "Translator App",
