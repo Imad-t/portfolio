@@ -1,5 +1,5 @@
 import styles from "../styles/About.module.scss";
-import image from "../assets/images/about.png";
+import PropTypes from "prop-types";
 
 const About = ({darkMode}) => {
   return (
@@ -28,5 +28,7 @@ const About = ({darkMode}) => {
     </div>
   );
 };
-
+About.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+};
 export default About;

@@ -3,6 +3,8 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import logo from "../assets/images/logo.png";
 import logoDark from "../assets/images/logodark.png";
+import PropTypes from "prop-types";
+
 
 
 const Navbar = ({ darkMode, setDarkMode, scrollToComponent }) => {
@@ -33,5 +35,9 @@ const Navbar = ({ darkMode, setDarkMode, scrollToComponent }) => {
     </div>
   );
 };
-
+Navbar.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+  setDarkMode: PropTypes.any.isRequired,
+  scrollToComponent: PropTypes.any.isRequired,
+};
 export default Navbar;
