@@ -24,10 +24,10 @@ const Home = ({ darkMode }) => {
             </div>
 
             <div className={styles.links}>
-              <a href={project.code}>
+              <a href={project.code} target="_blank" rel="noreferrer">
                 <GitHubIcon /> <span>Code</span>
               </a>
-              <a href={project.demo}>
+              <a href={project.demo} target="_blank" rel="noreferrer">
                 <LaunchIcon /> <span>Live Demo</span>
               </a>
             </div>
