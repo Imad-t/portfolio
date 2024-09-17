@@ -7,8 +7,17 @@ import translator from "./assets/images/translator.png";
 import quiz from "./assets/images/quiz.png";
 import t3 from "./assets/images/t3.png";
 import qr from "./assets/images/qr.png";
-
+import nextlevel from "./assets/images/foodies.png";
 const projects = [
+  {
+    title: "NextLevel Food",
+    description: 
+    "NextLevel Food is a place to discover new dishes, and to connect with other food lovers.",
+    tech: ["NextJs","CSS"],
+    code: "https://github.com/Imad-t/Nextlevel-Food",
+    demo: "https://nextlevel-food-tau.vercel.app/",
+    img: nextlevel,
+  },
   {
     title: "Online Gallery",
     description:
