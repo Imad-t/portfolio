@@ -72,7 +72,7 @@ const Home = ({ darkMode }) => {
           </ul>
         </div>
       </div>
-      <div className={styles.myImage}></div>
+      <div className={styles.myImage} loading="lazy"></div>
     </div>
   );
 };
