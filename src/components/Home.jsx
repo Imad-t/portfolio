@@ -20,9 +20,9 @@ const Home = ({ darkMode }) => {
   return (
     <div className={`${styles.home} ${darkMode ? styles["dark-mode"] : ""}`}>
       <div className={styles.info}>
-        <h1>Front-End React Developer</h1>
+        <h1>Software Developer</h1>
         <p>
-          Hi, I am Imad-Eddine Terraf, a passionate front-end React developer
+          Hi, I am Imad-Eddine Terraf, a passionate software developer
           based in Algiers, Algeria.
         </p>
         <div className={styles.proLinks}>
