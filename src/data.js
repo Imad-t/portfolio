@@ -8,15 +8,16 @@ import quiz from "./assets/images/quiz.png";
 import t3 from "./assets/images/t3.png";
 import qr from "./assets/images/qr.png";
 import nextlevel from "./assets/images/foodies.png";
+import spinet from "./assets/images/spinet.png";
 const projects = [
   {
-    title: "NextLevel Food",
+    title: "Spinet Web",
     description: 
-    "NextLevel Food is a place to discover new dishes, and to connect with other food lovers.",
-    tech: ["NextJs","CSS"],
-    code: "https://github.com/Imad-t/Nextlevel-Food",
-    demo: "https://nextlevel-food-tau.vercel.app/",
-    img: nextlevel,
+    "The web platform for Spinet NFC, a digital platform that allows users to create and manage their contacts and professional profiles.",
+    tech: ["NextJs","TailwindCSS","Typescript"],
+    // code: "https://github.com/Imad-t/Nextlevel-Food",
+    demo: "https://spinettest.vercel.app/",
+    img: spinet,
   },
   {
     title: "Online Gallery",
@@ -44,6 +45,15 @@ const projects = [
     code: "https://github.com/Imad-t/countryQuiz",
     demo: "https://country-quiz-puce.vercel.app/",
     img: quiz,
+  },
+  {
+    title: "NextLevel Food",
+    description: 
+    "NextLevel Food is a place to discover new dishes, and to connect with other food lovers.",
+    tech: ["NextJs","CSS"],
+    code: "https://github.com/Imad-t/Nextlevel-Food",
+    demo: "https://nextlevel-food-tau.vercel.app/",
+    img: nextlevel,
   },
   {
     title: "QR Code Generator",
