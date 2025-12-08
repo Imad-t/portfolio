@@ -38,6 +38,15 @@ const projects = [
     img: translator,
   },
   {
+    title: "AI Apprentice",
+    description:
+      "A fun, kid-friendly interactive demo where children train a simple neural networks to recognize jobs by correcting its guesses on pictures, with colorful live visualizations and a final test mode.",
+    tech: ["React", "TailwindCss", "Machine Learning"],
+    code: "https://github.com/Imad-t/neural-link",
+    demo: "https://aiapprentice.vercel.app/",
+    img: translator,
+  },
+  {
     title: "Country Quiz",
     description:
       "A quiz game that tests users knowledge of countries and their flags utilizing the REST countries API.",
