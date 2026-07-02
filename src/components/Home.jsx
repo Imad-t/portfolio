@@ -26,7 +26,7 @@ const Home = ({ darkMode }) => {
           based in Algiers, Algeria.
         </p>
         <div className={styles.proLinks}>
-          <a href="https://www.linkedin.com/in/imad-eddine-terraf-🇵🇸-745a0b201/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/imad-eddine-terraf-745a0b201/" target="_blank" rel="noreferrer">
             <img className={styles.contact} src={linkedin} alt="Linkedin " />
           </a>
           <a href="https://github.com/Imad-t" target="_blank" rel="noreferrer">
