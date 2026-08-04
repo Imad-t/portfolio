@@ -9,6 +9,8 @@ import t3 from "./assets/images/t3.png";
 import qr from "./assets/images/qr.png";
 import nextlevel from "./assets/images/foodies.png";
 import spinet from "./assets/images/spinet.png";
+import apprentice from "./assets/images/ai-apprentice.png";
+import modevent from "./assets/images/modevent.png";
 const projects = [
   {
     title: "Spinet Web",
@@ -18,6 +20,15 @@ const projects = [
     // code: "https://github.com/Imad-t/Nextlevel-Food",
     demo: "https://spinet.app",
     img: spinet,
+  },
+  {
+    title: "ModEvent",
+    description: 
+    "Website of MODEVENT Agency",
+    tech: ["ReactJS","TailwindCSS","Typescript"],
+    // code: "https://github.com/Imad-t/Nextlevel-Food",
+    demo: "https://modevent.vercel.app/",
+    img: modevent,
   },
   {
     title: "Online Gallery",
@@ -44,7 +55,7 @@ const projects = [
     tech: ["React", "TailwindCss", "Machine Learning"],
     code: "https://github.com/Imad-t/neural-link",
     demo: "https://aiapprentice.vercel.app/",
-    img: translator,
+    img: apprentice,
   },
   {
     title: "Country Quiz",
