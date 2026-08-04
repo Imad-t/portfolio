@@ -16,7 +16,7 @@ const projects = [
     "The web platform for Spinet NFC, a digital platform that allows users to create and manage their contacts and professional profiles.",
     tech: ["NextJs","TailwindCSS","Typescript"],
     // code: "https://github.com/Imad-t/Nextlevel-Food",
-    demo: "https://spinettest.vercel.app/",
+    demo: "https://spinet.app",
     img: spinet,
   },
   {
